@@ -1,13 +1,13 @@
-package it.vscalcione.springboot.demoapplication;
+package it.vscalcione.springboot.securitydemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootDemoApplication {
+public class SecurityDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootDemoApplication.class, args);
+		SpringApplication.run(SecurityDemoApplication.class, args);
 	}
 
 }

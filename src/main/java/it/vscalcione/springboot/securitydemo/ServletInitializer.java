@@ -1,4 +1,4 @@
-package it.vscalcione.springboot.demoapplication;
+package it.vscalcione.springboot.securitydemo;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringbootDemoApplication.class);
+		return application.sources(SecurityDemoApplication.class);
 	}
 
 }

@@ -1,0 +1,13 @@
+body.login-page {
+    background-color: #f7f9fb;
+    font-size: 14px;
+}
+
+.login-page .brand {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}

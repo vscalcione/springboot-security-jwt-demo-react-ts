@@ -5,20 +5,18 @@ const getToken = () => {
     return localStorage.getItem('USER_KEY');
 }
 
-const baseUrl = 'http://locahost:8080';
-
-export const userLogin = (authRequest: any, baseUrl) => {
+export const userLogin = (authRequest: any) => {
     return axios({
         method: 'POST',
-        url: `${process.env.hostUrl} || ${baseUrl}}/api/v1/auth/login`,
+        url: `${process.env.hostUrl} || 'http://locahost:8080'}/api/v1/auth/login`,
         data: authRequest
     });
 }
 
-export const fetchUserData = (authRequest: any, baseUrl) => {
+export const fetchUserData = (authRequest: any) => {
     return axios({
         method: 'GET',
-        url: `${process.env.hostUrl} || ${baseUrl}}/api/v1/auth/userinfo`,
+        url: `${process.env.hostUrl} || 'http://localhost:8080'}/api/v1/auth/userinfo`,
         headers: {
             'Authorization': 'Berear ' + getToken()
         }
